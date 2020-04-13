@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Phan Tan Hung"
-  avatar           : "https://drive.google.com/file/d/0B5NGjyYNFoRRVkJyY2FjMHRyUk0/view?usp=sharing" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/portfolio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Ho Chi Minh City"
   email            :

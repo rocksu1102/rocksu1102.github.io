@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Welcome to my Website"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : Phan Tan Hung
-description              : "DevOps & System Engineer"
+name                     : &name "Phan Tan Hung"
+description              : &description "Personal Website"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"

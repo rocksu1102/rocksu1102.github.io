@@ -1,6 +1,6 @@
 ---
 title: "About 1"
-permalink: /about1/
+permalink: /about_1/
 date: 2016-02-24T03:02:20+00:00
 ---
 

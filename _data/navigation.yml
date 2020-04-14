@@ -1,10 +1,10 @@
 # main links
 main:
-    - title: "Categories"
+  - title: "Categories"
     url: /categories/ 
-    - title: "CV"
+  - title: "CV"
     url: /collection-archive/
-    - title: "About Me"
+  - title: "About Me"
     url: /about-me/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/

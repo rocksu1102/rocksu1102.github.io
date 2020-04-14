@@ -1,14 +1,14 @@
 # main links
 main:
+    - title: "Categories"
+    url: /categories/ 
+    - title: "CV"
+    url: /collection-archive/
+    - title: "About Me"
+    url: /portfolio/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About Me"
-    url: /portfolio/
   # - title: "Sample Posts"
   #   url: /year-archive/
-  - title: "CV"
-    url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Categories"
-    url: /categories/ 

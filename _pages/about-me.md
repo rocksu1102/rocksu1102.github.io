@@ -1,4 +1,5 @@
 ---
+layout: archive
 title: "About Me"
 permalink: /about-me/
 date: 2020-04-16

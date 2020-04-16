@@ -2,7 +2,7 @@
 main:
   - title: "Categories"
     url: /categories/ 
-  - title: "CV"
+  - title: "Projects"
     url: /collection-archive/
   - title: "About Me"
     url: /about-me/

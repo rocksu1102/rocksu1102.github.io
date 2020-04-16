@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+ayout: archive
 permalink: /about-me/
 author_profile: true
 date: 2020-04-16

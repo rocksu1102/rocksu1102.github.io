@@ -1,10 +1,10 @@
 # main links
 main:
-  - title: "Categories"
+  - title: "Chuyên Mục"
     url: /categories/ 
-  - title: "Projects & Experience"
+  - title: "IT Cu Li"
     url: /projects/
-  - title: "About Me"
+  - title: "Về Tôi"
     url: /about-me/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/

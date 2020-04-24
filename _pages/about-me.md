@@ -1,12 +1,14 @@
 ---
-title: "About Me"
+title: "Tôi !!!"
 layout: archive
 permalink: /about-me/
 author_profile: true
 date: 2020-04-16
 ---
-<p style="text-align: justify;">Hello, My name is Phan Tấn Hưng. People find me to be an upbeat, self-motivated team player with excellent communication skills. For the past several years I have worked as customer service, system engineer, devops and project manager in the technology industry.</p>
+<font size="12">
+<p style="text-align: justify;">Rất vui khi bạn đã ghé thăm website này. Tôi đã theo cái ngành IT cu li này ngót ngét cũng hơn chục năm mà bây giờ ngồi ngẫm lại thấy chẳng có gì trong cái đầu đầy hai thứ tóc này, thôi thì làm cái website lưu lại để sau này vắc chân ngồi uống trà đọc lại cho đỡ buồn. </p> 
 
-<p>Feel free contact me If you are interested.</p>
 <p>Email:&nbsp;<a href="mailto:hung.phantan@gmail.com">hung.phantan@gmail.com</a></p>
 <p>Skype: hung.phantan</p>
+
+</font>

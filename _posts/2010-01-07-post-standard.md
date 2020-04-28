@@ -1,5 +1,5 @@
 ---
-title: "Thói quen khó bỏ"
+title: "Post Standard"
 excerpt_separator: "<!--more-->"
 categories:
   - Cuộc sống

@@ -41,17 +41,17 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 
     - Copy ssh public key (nội dung bên trong của file id_rsa.pub)
     - Sau đó, paste nội dung này vào tài khoản github của mình bằng cách:
-      - Đăng nhập vào github và vào Account Settings
-      - Click "SSH Keys" 
-      - Click "Add SSH Key" 
-      - Đặt tên label (My SSH Key), sau đó paste nội dung public key vào khung text box.
-      - Sau đó, quay lại màn hình terminal để kiểm tra kết quả
+        - Đăng nhập vào github và vào Account Settings
+        - Click "SSH Keys" 
+        - Click "Add SSH Key" 
+        - Đặt tên label (My SSH Key), sau đó paste nội dung public key vào khung text box.
+        - Sau đó, quay lại màn hình terminal để kiểm tra kết quả
 
 ```yaml
 $ ssh -T git@github.com
 ```
 
-      - Nếu kết quả như bên dưới thì chúc mừng, bạn đã thành công !!!
+        - Nếu kết quả như bên dưới thì chúc mừng, bạn đã thành công !!!
 
 ```yaml
 Hi username! You've successfully authenticated, but Github does

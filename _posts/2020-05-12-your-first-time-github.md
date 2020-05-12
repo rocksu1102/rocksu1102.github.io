@@ -17,7 +17,7 @@ Trước tiên, cần chuẩn bị các thứ sau:
 
 Khi mọi thứ đã xong, OK, Let's rock and roll nào:
 
-1. Cấu hình git với username và email:
+Cấu hình git với username và email:
 
 - Vào terminal và gõ các câu lệnh như bên dưới:
 
@@ -36,7 +36,7 @@ Chú thích:
 
 Dòng đầu tiên là bật coloerd output trong terminal; dòng thứ hai là cho biết git sẽ dùng trình soạn thảo nào (mình dùng MacOS nên mình chọn emacs)
 
-2. Cấu hình SSH:
+Cấu hình SSH:
 
 - Kiểm tra xem bạn đã có các files này chưa 
 
@@ -62,14 +62,12 @@ $ ssh-keygen -t rsa -C "your_email@example.com"
 
 ```yaml
 $ ssh -T git@github.com
-```
 
-  - Nếu kết quả như bên dưới thì chúc mừng, bạn đã thành công !!!
-
-```yaml
 Hi username! You've successfully authenticated, but Github does
 not provide shell access.
 ```
+
+Nếu kết quả như bên trên thì chúc mừng, bạn đã thành công !!!
 
 Túm lại, các bước mình cần làm là:
 1. Cấu hình git với username và email (không bắt buộc)

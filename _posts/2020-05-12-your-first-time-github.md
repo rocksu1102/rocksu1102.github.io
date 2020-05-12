@@ -1,5 +1,5 @@
 ---
-title: "Lần đầu làm "chuyện ấy" với Git và Github"
+title: "Lần đầu làm chuyện ấy với Git và Github"
 excerpt_separator: "<!--more-->"
 categories:
   - Github

@@ -1,69 +1,61 @@
 ---
-title: "Lần đầu làm chuyện ấy với Git và Github"
+title: "Lần đầu làm chuyện ấy với Github"
 excerpt_separator: "<!--more-->"
 categories:
   - Github
 tags:
-  - Git
+  - Github
   
 ---
 
-If you’ve never used git or github before, there are a bunch of things that you need to do. It’s very well explained on github, but repeated here for completeness.
+Công nhận "lần đầu làm chuyện ấy" với Github có nhiều điều bỡ ngỡ thật. Sau khi đã quen rồi thì mọi thứ dễ dàng hơn rất nhiều
 
-- Get a github account.
-- Download and install git.
-- Set up git with your user name and email.
+Trước tiên, bạn cần chuẩn bị:
 
-Open a terminal/shell and type:
+- Tài khoản github
+- Tải và cài đặt git.
+- Cấu hình git với username và email
+
+OK, sau khi mọi thứ đã xong, bạn mở terminal/shell:
 
 ```yaml
 $ git config --global user.name "Your name here"
 $ git config --global user.email "your_email@example.com"
 ```
-(Don’t type the $; that just indicates that you’re doing this at the command line.)
 
-I also do:
+Như vậy là xong phần cấu hình git với username và email, với mình thì cấu hình thêm các option sau:
 
 ```yaml
 $ git config --global color.ui true
 $ git config --global core.editor emacs
 ```
+Dòng đầu tiên là bật coloerd output trong terminal; dòng thứ hai là cho biết git sẽ dùng trình soạn thảo nào (mình dùng MacOS nên mình chọn emacs)
 
-The first of these will enable colored output in the terminal; the second tells git that you want to use emacs.
-
-- Set up ssh on your computer. I like Roger Peng’s guide to setting up password-less logins. Also see github’s guide to generating SSH keys.
-
-- Look to see if you have files ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub.
-- If not, create such public/private keys: Open a terminal/shell and type:
+- Bước tiếp theo là mình cấu hình SSH trên máy mình đang dùng, các bước làm như sau:
+    - Kiểm tra xem bạn đã có các files này chưa ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub (đây là ssh private và public key)
+    - Nếu chưa thì tiến hành tạo, mở terminal và gõ:
 
 ```yaml
 $ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
-- Copy your public key (the contents of the newly-created id_rsa.pub file) into your clipboard. On a Mac, in the terminal/shell, type:
-
-```yaml
-$ pbcopy < ~/.ssh/id_rsa.pub
-```
-
-- Paste your ssh public key into your github account settings.
-
-- Go to your github Account Settings
-- Click “SSH Keys” on the left.
-- Click “Add SSH Key” on the right.
-- Add a label (like “My laptop”) and paste the public key into the big text box.
-- In a terminal/shell, type the following to test it:
+    - Copy ssh public key (nội dung bên trong của file id_rsa.pub)
+    - Sau đó, paste nội dung này vào tài khoản github của mình bằng cách:
+      - Đăng nhập vào github và vào Account Settings
+      - Click "SSH Keys" 
+      - Click "Add SSH Key" 
+      - Đặt tên label (My SSH Key), sau đó paste nội dung public key vào khung text box.
+      - Sau đó, quay lại màn hình terminal để kiểm tra kết quả
 
 ```yaml
 $ ssh -T git@github.com
 ```
 
-- If it says something like the following, it worked:
+      - Nếu kết quả như bên dưới thì chúc mừng, bạn đã thành công !!!
 
 ```yaml
 Hi username! You've successfully authenticated, but Github does
 not provide shell access.
 ```
-
 
 URL: https://kbroman.org/github_tutorial/pages/first_time.html

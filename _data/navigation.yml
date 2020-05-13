@@ -2,7 +2,7 @@
 main:
   - title: "Chuyên mục"
     url: /categories/ 
-  - title: "Quá trình culi"
+  - title: "Quá trình làm culi"
     url: /projects/
   - title: "Tôi"
     url: /about-me/

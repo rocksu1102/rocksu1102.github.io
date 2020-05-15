@@ -27,7 +27,7 @@ date: 2020-04-16
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>KDDI VIETNAM</strong></p>
-<p style="text-align: center;">Manager</p>
+<p style="text-align: center;">Engineering Manager</p>
 <p style="text-align: center;">(2017 - 2019)</p>
 </td>
 <td style="height: 175px; width: 224px;">

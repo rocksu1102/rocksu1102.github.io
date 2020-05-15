@@ -21,13 +21,13 @@ date: 2020-04-16
 </tr>
 <tr style="height: 175px;">
 <td style="height: 175px; width: 224px;">
-<p style="text-align: center;"><strong>TEAMWORK VIETNAM</strong></p>
-<p style="text-align: center;">Linux/Unix System Engineer</p>
+<p style="text-align: center;"><strong>TEAMWORK</strong></p>
+<p style="text-align: center;">Linux System Engineer</p>
 <p style="text-align: center;">(2019 - 2020)</p>
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>KDDI VIETNAM</strong></p>
-<p style="text-align: center;">Manager &amp; Project Manager</p>
+<p style="text-align: center;">Manager</p>
 <p style="text-align: center;">(2017 - 2019)</p>
 </td>
 <td style="height: 175px; width: 224px;">

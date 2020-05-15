@@ -1,5 +1,5 @@
 ---
-title: "Projects & Experience"
+title: "Quá trình làm IT culi"
 layout: archive
 permalink: /projects/
 author_profile: true

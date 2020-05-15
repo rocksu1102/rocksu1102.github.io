@@ -22,17 +22,17 @@ date: 2020-04-16
 <tr style="height: 175px;">
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>TEAMWORK VIETNAM</strong></p>
-<p style="text-align: center;">LINUX/UNIX SYSTEM ENGINEER</p>
+<p style="text-align: center;">Linux/Unix System Engineer</p>
 <p style="text-align: center;">(2019 - 2020)</p>
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>KDDI VIETNAM</strong></p>
-<p style="text-align: center;">MANAGER &amp; PROJECT MANAGER</p>
+<p style="text-align: center;">Manager &amp; Project Manager</p>
 <p style="text-align: center;">(2017 - 2019)</p>
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;">&nbsp;<strong>SCHLUMBERGER</strong></p>
-<p style="text-align: center;">SYSTEM &amp; DATA ENGINEER</p>
+<p style="text-align: center;">System &amp; Data Engineer</p>
 <p style="text-align: center;">(2013 - 2016)</p>
 </td>
 </tr>
@@ -50,17 +50,17 @@ date: 2020-04-16
 <tr style="height: 175px;">
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>RMIT UNIVERSITY</strong></p>
-<p style="text-align: center;">SYSTEM ADMINISTRATOR</p>
+<p style="text-align: center;">System Administrator</p>
 <p style="text-align: center;">(2009 - 2013)</p>
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>AMADEUS VIETNAM</strong></p>
-<p style="text-align: center;">TECHNICAL SUPERVISOR</p>
+<p style="text-align: center;">Technical Supervisor</p>
 <p style="text-align: center;">(2006 - 2009)</p>
 </td>
 <td style="height: 175px; width: 224px;">
 <p style="text-align: center;"><strong>UNITED AIRLINES</strong></p>
-<p style="text-align: center;">TECHNICAL SUPPORT</p>
+<p style="text-align: center;">Technical Support</p>
 <p style="text-align: center;">(2004 - 2006)</p>
 </td>
 </tr>

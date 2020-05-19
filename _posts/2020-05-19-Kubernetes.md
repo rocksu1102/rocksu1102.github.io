@@ -24,18 +24,16 @@ Cách thức hoạt động của kiến trúc Kubernetes:
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cloudfun.vn/attachments/kubernetes-architecture-png.1437/" alt="" width="640" height="352" /></p>
 
 Kiến trúc k8s và các thành phần của nó:
-    * K8s Master:
-    Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
-
-        * Etcd storage: Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
-        * API-Server: Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
-        * Scheduler: Lên lịch các pod trên các node khác nhau dựa trên việc sử dụng tài nguyên và quyết định nơi nào triển khai dịch vụ nào.
-        * Controller Manager: Nó chạy một số quy trình điều khiển riêng biệt trong nền để điều chỉnh trạng thái chia sẻ của cluster và thực hiện một tác vụ theo quy luật. Khi có bất kỳ thay đổi nào trong dịch vụ, bộ điều khiển sẽ phát hiện ra sự thay đổi và bắt đầu làm việc theo trạng thái mong muốn mới.
-        * Worker Node: Còn được gọi là Kubernetes hoặc Minion node, nó chứa thông tin để quản lý kết nối mạng giữa các container như Docker và liên lạc giữa master node khi gán tài nguyên cho các container theo lịch trình.
-        * Kubelet: Đảm bảo rằng tất cả các container trong node đang chạy và ở trạng thái healthy. Kubelet theo dõi trạng thái của một pod nếu nó không ở trạng thái mong muốn. Nếu một node thất bại, bộ điều khiển sao chép sẽ quan sát sự thay đổi này và khởi chạy các pod trên một pod healthy khác.
-        * Container: Container là mức thấp nhất của microservice, được đặt bên trong pod và cần địa chỉ IP bên ngoài để xem xét quy trình bên ngoài.
-        * Kube Proxy: Nó hoạt động như một proxy mạng và bộ cân bằng tải. Ngoài ra, nó chuyển tiếp yêu cầu tới các pod chính xác trên các mạng bị cô lập trong một cluster.
-        * cAdvisor: Hoạt động như một trợ lý chịu trách nhiệm theo dõi và thu thập dữ liệu về việc sử dụng tài nguyên và số liệu hiệu suất trên mỗi node.
+    * K8s Master: Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
+    * Etcd storage: Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
+    * API-Server: Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
+    * Scheduler: Lên lịch các pod trên các node khác nhau dựa trên việc sử dụng tài nguyên và quyết định nơi nào triển khai dịch vụ nào.
+    * Controller Manager: Nó chạy một số quy trình điều khiển riêng biệt trong nền để điều chỉnh trạng thái chia sẻ của cluster và thực hiện một tác vụ theo quy luật. Khi có bất kỳ thay đổi nào trong dịch vụ, bộ điều khiển sẽ phát hiện ra sự thay đổi và bắt đầu làm việc theo trạng thái mong muốn mới.
+    * Worker Node: Còn được gọi là Kubernetes hoặc Minion node, nó chứa thông tin để quản lý kết nối mạng giữa các container như Docker và liên lạc giữa master node khi gán tài nguyên cho các container theo lịch trình.
+    * Kubelet: Đảm bảo rằng tất cả các container trong node đang chạy và ở trạng thái healthy. Kubelet theo dõi trạng thái của một pod nếu nó không ở trạng thái mong muốn. Nếu một node thất bại, bộ điều khiển sao chép sẽ quan sát sự thay đổi này và khởi chạy các pod trên một pod healthy khác.
+    * Container: Container là mức thấp nhất của microservice, được đặt bên trong pod và cần địa chỉ IP bên ngoài để xem xét quy trình bên ngoài.
+    * Kube Proxy: Nó hoạt động như một proxy mạng và bộ cân bằng tải. Ngoài ra, nó chuyển tiếp yêu cầu tới các pod chính xác trên các mạng bị cô lập trong một cluster.
+    * cAdvisor: Hoạt động như một trợ lý chịu trách nhiệm theo dõi và thu thập dữ liệu về việc sử dụng tài nguyên và số liệu hiệu suất trên mỗi node.
 
 Ưu điểm của k8s
     * <h4>Nguồn mở và di động</h4>

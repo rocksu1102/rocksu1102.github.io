@@ -25,8 +25,8 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 
 <h4>Kiến trúc k8s và các thành phần của nó:</h4>
 
-* K8s Master: Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
-* Etcd storage: Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
+* <h4>K8s Master:</h4> Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
+* <h4>Etcd storage:</h4> Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
 * API-Server: Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
 * Scheduler: Lên lịch các pod trên các node khác nhau dựa trên việc sử dụng tài nguyên và quyết định nơi nào triển khai dịch vụ nào.
 * Controller Manager: Nó chạy một số quy trình điều khiển riêng biệt trong nền để điều chỉnh trạng thái chia sẻ của cluster và thực hiện một tác vụ theo quy luật. Khi có bất kỳ thay đổi nào trong dịch vụ, bộ điều khiển sẽ phát hiện ra sự thay đổi và bắt đầu làm việc theo trạng thái mong muốn mới.
@@ -38,9 +38,9 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 
 <h4>Ưu điểm của k8s</h4>
 
-* Nguồn mở và di động
-Kubernetes có thể chạy các container trên một hoặc nhiều môi trường public cloud, máy ảo hoặc trên bare metal, điều đó có nghĩa là nó có thể được triển khai trên bất kỳ cơ sở hạ tầng nào. Hơn nữa, nó tương thích trên nhiều nền tảng, giúp cho chiến lược đa cloud trở nên linh hoạt và có thể sử dụng được.
-* Khả năng mở rộng workloads
+* Nguồn mở và di động: Kubernetes có thể chạy các container trên một hoặc nhiều môi trường public cloud, máy ảo hoặc trên bare metal, điều đó có nghĩa là nó có thể được triển khai trên bất kỳ cơ sở hạ tầng nào. Hơn nữa, nó tương thích trên nhiều nền tảng, giúp cho chiến lược đa cloud trở nên linh hoạt và có thể sử dụng được.
+
+* Khả năng mở rộng workloads:
     * Horizontal Infrastructure Scaling: Các thao tác được thực hiện ở cấp máy chủ riêng lẻ để thực hiện chia tỷ lệ theo chiều ngang. Máy chủ mới có thể được thêm hoặc gỡ bỏ dễ dàng.
     * Auto-Scaling : Dựa trên việc sử dụng tài nguyên CPU hoặc các số liệu ứng dụng khác, có thể sửa đổi số lượng container đang chạy.
     * Manual Scaling : Có thể thay đổi số lượng container đang chạy thông qua một lệnh hoặc giao diện.

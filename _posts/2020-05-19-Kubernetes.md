@@ -36,10 +36,11 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 * Kube Proxy: Nó hoạt động như một proxy mạng và bộ cân bằng tải. Ngoài ra, nó chuyển tiếp yêu cầu tới các pod chính xác trên các mạng bị cô lập trong một cluster.
 * cAdvisor: Hoạt động như một trợ lý chịu trách nhiệm theo dõi và thu thập dữ liệu về việc sử dụng tài nguyên và số liệu hiệu suất trên mỗi node.
 
-Ưu điểm của k8s
-* <h4>Nguồn mở và di động</h4>
+<h4>Ưu điểm của k8s</h4>
+
+* Nguồn mở và di động
 Kubernetes có thể chạy các container trên một hoặc nhiều môi trường public cloud, máy ảo hoặc trên bare metal, điều đó có nghĩa là nó có thể được triển khai trên bất kỳ cơ sở hạ tầng nào. Hơn nữa, nó tương thích trên nhiều nền tảng, giúp cho chiến lược đa cloud trở nên linh hoạt và có thể sử dụng được.
-* <h4>Khả năng mở rộng workloads</h4>
+* Khả năng mở rộng workloads
     * <h4>Horizontal Infrastructure Scaling:</h4> Các thao tác được thực hiện ở cấp máy chủ riêng lẻ để thực hiện chia tỷ lệ theo chiều ngang. Máy chủ mới có thể được thêm hoặc gỡ bỏ dễ dàng.
     * <h4>Auto-Scaling :</h4> Dựa trên việc sử dụng tài nguyên CPU hoặc các số liệu ứng dụng khác, có thể sửa đổi số lượng container đang chạy.
     * <h4>Manual Scaling :</h4> Có thể thay đổi số lượng container đang chạy thông qua một lệnh hoặc giao diện.

@@ -41,35 +41,31 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 * Nguồn mở và di động
 Kubernetes có thể chạy các container trên một hoặc nhiều môi trường public cloud, máy ảo hoặc trên bare metal, điều đó có nghĩa là nó có thể được triển khai trên bất kỳ cơ sở hạ tầng nào. Hơn nữa, nó tương thích trên nhiều nền tảng, giúp cho chiến lược đa cloud trở nên linh hoạt và có thể sử dụng được.
 * Khả năng mở rộng workloads
-    * <h4>Horizontal Infrastructure Scaling:</h4> Các thao tác được thực hiện ở cấp máy chủ riêng lẻ để thực hiện chia tỷ lệ theo chiều ngang. Máy chủ mới có thể được thêm hoặc gỡ bỏ dễ dàng.
-    * <h4>Auto-Scaling :</h4> Dựa trên việc sử dụng tài nguyên CPU hoặc các số liệu ứng dụng khác, có thể sửa đổi số lượng container đang chạy.
-    * <h4>Manual Scaling :</h4> Có thể thay đổi số lượng container đang chạy thông qua một lệnh hoặc giao diện.
-    * <h4>Replication Controller :</h4> Bộ điều khiển sao chép đảm bảo rằng cluster có số lượng pod tương đương được chỉ định trong điều kiện đang chạy. Nếu có quá nhiều pod, bộ điều khiển sao chép có thể loại bỏ các pod bổ sung hoặc ngược lại.
-* <h4>Tính sẵn sàng cao</h4>
-    * <h4>Health Checks:</h4> Kubernetes đảm bảo rằng ứng dụng không bị lỗi bằng cách liên tục kiểm tra tình trạng của các mode và container. Kubernetes cung cấp khả năng tự phục hồi và tự động thay thế nếu pod bị hỏng do lỗi.
-    * <h4>Định tuyến lưu lượng và cân bằng tải:</h4> Bộ cân bằng tải Kubernetes phân phối tải trên nhiều tải, cho phép cân bằng tài nguyên nhanh chóng trong lưu lượng ngẫu nhiên hoặc xử lý hàng loạt.
-* <h4>Được thiết kế để triển khai</h4>
-    * <h4>Tự động triển khai và khôi phục:</h4> Kubernetes xử lý phiên bản mới và cập nhật cho ứng dụng mà không có downtime, đồng thời theo dõi health trong quá trình triển khai. Nếu bất kỳ lỗi nào xảy ra trong quá trình, nó sẽ tự động khôi phục.
-    * <h4>Triển khai Canary:</h4> Kubernetes kiểm tra song song việc sản xuất triển khai mới và phiên bản trước đó, trước khi tăng quy mô triển khai mới và đồng thời giảm quy mô triển khai trước đó.
-    * <h4>Hỗ trợ Framework và ngôn ngữ lập trình:</h4> Kubernetes hỗ trợ hầu hết các ngôn ngữ và framework lập trình như Java, .NET, v.v. và cũng nhận được sự hỗ trợ lớn từ cộng đồng phát triển. Nếu một ứng dụng có khả năng chạy trong một container, nó cũng có thể chạy trong Kubernetes.
-* <h4>Và nhiều hơn nữa</h4>
-    Kubernetes cung cấp quản lý DNS, giám sát tài nguyên, ghi nhật ký, sắp xếp lưu trữ và cũng giải quyết vấn đề bảo mật. Chẳng hạn, nó đảm bảo rằng thông tin như mật khẩu hoặc ssh keys được lưu trữ an toàn trong các Kubernetes secret. Các tính năng mới được phát hành liên tục và có thể có trên Kubernetes GitHub.
-* <h4>K8s và Container Stateful</h4>
-    Kubernetes StatefulSets cung cấp các tài nguyên như khối lượng, id mạng ổn định và chỉ mục thứ tự từ 0 đến N, v.v để đối phó với các stateful container. Volume là một trong những tính năng quan trọng như vậy cho phép chạy ứng dụng stateful. Hai loại volume chính được hỗ trợ là:
-    * <h4>Volume lưu trữ nhất thời:</h4> Lưu trữ dữ liệu nhất thời khác với Docker. Trong Kubernetes, volume được tính đến bất kỳ container nào chạy trong pod và dữ liệu được lưu trữ trên container. Nhưng, nếu các pod bị phá hoại, volume sẽ tự động bị loại bỏ.
-    * <h4>Lưu trữ trọn đời:</h4> Dữ liệu sẽ được lưu trữ mãi mãi. Khi pod bị phá hoại hoặc được chuyển đến một node khác, dữ liệu đó sẽ vẫn còn cho đến khi nó bị xóa bởi người dùng. Do đó, dữ liệu được lưu trữ từ xa.
+    * Horizontal Infrastructure Scaling: Các thao tác được thực hiện ở cấp máy chủ riêng lẻ để thực hiện chia tỷ lệ theo chiều ngang. Máy chủ mới có thể được thêm hoặc gỡ bỏ dễ dàng.
+    * Auto-Scaling : Dựa trên việc sử dụng tài nguyên CPU hoặc các số liệu ứng dụng khác, có thể sửa đổi số lượng container đang chạy.
+    * Manual Scaling : Có thể thay đổi số lượng container đang chạy thông qua một lệnh hoặc giao diện.
+    * Replication Controller : Bộ điều khiển sao chép đảm bảo rằng cluster có số lượng pod tương đương được chỉ định trong điều kiện đang chạy. Nếu có quá nhiều pod, bộ điều khiển sao chép có thể loại bỏ các pod bổ sung hoặc ngược lại.
+* Tính sẵn sàng cao
+    * Health Checks: Kubernetes đảm bảo rằng ứng dụng không bị lỗi bằng cách liên tục kiểm tra tình trạng của các mode và container. Kubernetes cung cấp khả năng tự phục hồi và tự động thay thế nếu pod bị hỏng do lỗi.
+    * Định tuyến lưu lượng và cân bằng tải: Bộ cân bằng tải Kubernetes phân phối tải trên nhiều tải, cho phép cân bằng tài nguyên nhanh chóng trong lưu lượng ngẫu nhiên hoặc xử lý hàng loạt.
+* Được thiết kế để triển khai
+    * Tự động triển khai và khôi phục: Kubernetes xử lý phiên bản mới và cập nhật cho ứng dụng mà không có downtime, đồng thời theo dõi health trong quá trình triển khai. Nếu bất kỳ lỗi nào xảy ra trong quá trình, nó sẽ tự động khôi phục.
+    * Triển khai Canary: Kubernetes kiểm tra song song việc sản xuất triển khai mới và phiên bản trước đó, trước khi tăng quy mô triển khai mới và đồng thời giảm quy mô triển khai trước đó.
+    * Hỗ trợ Framework và ngôn ngữ lập trình: Kubernetes hỗ trợ hầu hết các ngôn ngữ và framework lập trình như Java, .NET, v.v. và cũng nhận được sự hỗ trợ lớn từ cộng đồng phát triển. Nếu một ứng dụng có khả năng chạy trong một container, nó cũng có thể chạy trong Kubernetes.
+* Và nhiều hơn nữa
+Kubernetes cung cấp quản lý DNS, giám sát tài nguyên, ghi nhật ký, sắp xếp lưu trữ và cũng giải quyết vấn đề bảo mật. Chẳng hạn, nó đảm bảo rằng thông tin như mật khẩu hoặc ssh keys được lưu trữ an toàn trong các Kubernetes secret. Các tính năng mới được phát hành liên tục và có thể có trên Kubernetes GitHub.
+* K8s và Container Stateful: Kubernetes StatefulSets cung cấp các tài nguyên như khối lượng, id mạng ổn định và chỉ mục thứ tự từ 0 đến N, v.v để đối phó với các stateful container. Volume là một trong những tính năng quan trọng như vậy cho phép chạy ứng dụng stateful. Hai loại volume chính được hỗ trợ là:
+    * Volume lưu trữ nhất thời: Lưu trữ dữ liệu nhất thời khác với Docker. Trong Kubernetes, volume được tính đến bất kỳ container nào chạy trong pod và dữ liệu được lưu trữ trên container. Nhưng, nếu các pod bị phá hoại, volume sẽ tự động bị loại bỏ.
+    * Lưu trữ trọn đời: Dữ liệu sẽ được lưu trữ mãi mãi. Khi pod bị phá hoại hoặc được chuyển đến một node khác, dữ liệu đó sẽ vẫn còn cho đến khi nó bị xóa bởi người dùng. Do đó, dữ liệu được lưu trữ từ xa.
 
 <h4>Đặt nền móng để phát triển ứng dụng cloud</h4>
 
 Một số công cụ quản lý và điều phối container như Apache Mesos với Marathon, Docker Swarm và AWS EC2 Container Service cung cấp các tính năng tuyệt vời nhưng nhẹ hơn Kubernetes.
-
 <h4>Docker Swarm</h4> Được gắn kết chặt chẽ với Docker runtime; do đó rất dễ dàng để chuyển từ Docker sang Swarm và ngược lại. 
-
 <h4>Mesos</h4> Với Marathon có thể triển khai bất kỳ loại ứng dụng nào và chỉ giới hạn ở các container. 
-
 <h4>AWS ECS</h4> Có thể dễ dàng truy cập bởi người dùng AWS hiện tại.
 
-Các trường hợp sử dụng thực tế của K8s
+<h4>Các trường hợp sử dụng thực tế của K8s</h4>
 * Pokémon GO
 * Pearson
 * Pinterest

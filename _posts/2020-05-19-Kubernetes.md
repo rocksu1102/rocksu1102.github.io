@@ -86,14 +86,12 @@ Một số công cụ quản lý và điều phối container như Apache Mesos 
 
 <h4>AWS ECS</h4> có thể dễ dàng truy cập bởi người dùng AWS hiện tại.
 
-<h4>Các trường hợp sủ dụng thực tế của K8s</h4>
-    * Pokémon GO
+Các trường hợp sủ dụng thực tế của K8s
+* Pokémon GO
+* Pearson
+* Pinterest
 
-    * Pearson
-
-    * Pinterest
-
-* <h4>Kết luận</h4>
+<h4>Kết luận</h4>
 
 Trong một khoảng thời gian ngắn, Kubernetes đã lớn mạnh và phát triển thành một hệ thống cực kỳ mạnh mẽ. Vì nó mang lại nhiều lợi ích khác nhau, nhiều công ty thuộc mọi quy mô tìm cách phát triển sản phẩm và dịch vụ để đáp ứng nhu cầu ngày càng tăng. Kubernetes có khả năng hoạt động trên cả public và private cloud và đã biến nó thành một trong những công cụ yêu thích cho các doanh nghiệp hoạt động với các hybrid cloud. Nếu điều này tiếp tục, thậm chí có thể thấy nhiều công ty đầu tư vào Kubernetes và hệ thống quản lý container.
 

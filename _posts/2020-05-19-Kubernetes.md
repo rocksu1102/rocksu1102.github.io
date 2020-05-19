@@ -19,11 +19,11 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 * Tối ưu hoá việc sử dụng phần cứng cơ bản bên dưới container.
 * Cho phép thành phần ứng dụng khởi động lại và di chuyển trên toàn hệ thống khi cần thiết.
 
-Cách thức hoạt động của kiến trúc Kubernetes:
+<h4>Cách thức hoạt động của kiến trúc Kubernetes:</h4>
 
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cloudfun.vn/attachments/kubernetes-architecture-png.1437/" alt="" width="640" height="352" /></p>
 
-Kiến trúc k8s và các thành phần của nó:
+<h4>Kiến trúc k8s và các thành phần của nó:</h4>
 
 * K8s Master: Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
 * Etcd storage: Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.

@@ -8,7 +8,7 @@ tags:
   
 ---
 
-<h4>Kubernetes là gì?</h4>
+### Kubernetes là gì?
 
 Kubernestes hay còn gọi là k8s, nó được biết đến như một công cụ quản lý, điều phối container hiệu quả nhất. Một số khả năng của k8s:
 
@@ -19,13 +19,13 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 * Tối ưu hoá việc sử dụng phần cứng cơ bản bên dưới container.
 * Cho phép thành phần ứng dụng khởi động lại và di chuyển trên toàn hệ thống khi cần thiết.
 
-<h4>Cách thức hoạt động của kiến trúc Kubernetes:</h4>
+### Cách thức hoạt động của kiến trúc Kubernetes:
 
 <p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://cloudfun.vn/attachments/kubernetes-architecture-png.1437/" alt="" width="640" height="352" /></p>
 
-<h4>Kiến trúc k8s và các thành phần của nó:</h4>
+### Kiến trúc k8s và các thành phần của nó:
 
-* <h4>K8s Master:</h4> Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
+* ### K8s Master: Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
 * <h4>Etcd storage:</h4> Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
 * API-Server: Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
 * Scheduler: Lên lịch các pod trên các node khác nhau dựa trên việc sử dụng tài nguyên và quyết định nơi nào triển khai dịch vụ nào.

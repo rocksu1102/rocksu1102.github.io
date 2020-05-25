@@ -37,7 +37,7 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 * Kube Proxy: Nó hoạt động như một proxy mạng và bộ cân bằng tải. Ngoài ra, nó chuyển tiếp yêu cầu tới các pod chính xác trên các mạng bị cô lập trong một cluster.
 * cAdvisor: Hoạt động như một trợ lý chịu trách nhiệm theo dõi và thu thập dữ liệu về việc sử dụng tài nguyên và số liệu hiệu suất trên mỗi node.
 
-**Ưu điểm của k8s**
+### Ưu điểm của k8s
 
 * Nguồn mở và di động: Kubernetes có thể chạy các container trên một hoặc nhiều môi trường public cloud, máy ảo hoặc trên bare metal, điều đó có nghĩa là nó có thể được triển khai trên bất kỳ cơ sở hạ tầng nào. Hơn nữa, nó tương thích trên nhiều nền tảng, giúp cho chiến lược đa cloud trở nên linh hoạt và có thể sử dụng được.
 
@@ -59,7 +59,7 @@ Kubernetes cung cấp quản lý DNS, giám sát tài nguyên, ghi nhật ký, s
     * Volume lưu trữ nhất thời: Lưu trữ dữ liệu nhất thời khác với Docker. Trong Kubernetes, volume được tính đến bất kỳ container nào chạy trong pod và dữ liệu được lưu trữ trên container. Nhưng, nếu các pod bị phá hoại, volume sẽ tự động bị loại bỏ.
     * Lưu trữ trọn đời: Dữ liệu sẽ được lưu trữ mãi mãi. Khi pod bị phá hoại hoặc được chuyển đến một node khác, dữ liệu đó sẽ vẫn còn cho đến khi nó bị xóa bởi người dùng. Do đó, dữ liệu được lưu trữ từ xa.
 
-**Đặt nền móng để phát triển ứng dụng cloud
+### Đặt nền móng để phát triển ứng dụng cloud
 
 Một số công cụ quản lý và điều phối container như Apache Mesos với Marathon, Docker Swarm và AWS EC2 Container Service cung cấp các tính năng tuyệt vời nhưng nhẹ hơn Kubernetes.
 
@@ -69,15 +69,15 @@ Một số công cụ quản lý và điều phối container như Apache Mesos 
 
 **AWS ECS** Có thể dễ dàng truy cập bởi người dùng AWS hiện tại.
 
-**Các trường hợp sử dụng thực tế của K8s
+### Các trường hợp sử dụng thực tế của K8s
   
-  **Pokémon GO
+  **Pokémon GO**
 
-  **Pearson
+  **Pearson**
 
-  **Pinterest
+  **Pinterest**
 
-**Kết luận
+### Kết luận
 
 Trong một khoảng thời gian ngắn, Kubernetes đã lớn mạnh và phát triển thành một hệ thống cực kỳ mạnh mẽ. Vì nó mang lại nhiều lợi ích khác nhau, nhiều công ty thuộc mọi quy mô tìm cách phát triển sản phẩm và dịch vụ để đáp ứng nhu cầu ngày càng tăng. Kubernetes có khả năng hoạt động trên cả public và private cloud và đã biến nó thành một trong những công cụ yêu thích cho các doanh nghiệp hoạt động với các hybrid cloud. Nếu điều này tiếp tục, thậm chí có thể thấy nhiều công ty đầu tư vào Kubernetes và hệ thống quản lý container.
 

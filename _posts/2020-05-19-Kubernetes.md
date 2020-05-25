@@ -71,11 +71,11 @@ Một số công cụ quản lý và điều phối container như Apache Mesos 
 
 ### Các trường hợp sử dụng thực tế của K8s
   
-  **Pokémon GO**
+  * Pokémon GO
 
-  **Pearson**
+  * Pearson
 
-  **Pinterest**
+  * Pinterest
 
 ### Kết luận
 

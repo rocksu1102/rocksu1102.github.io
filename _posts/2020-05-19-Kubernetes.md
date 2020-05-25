@@ -26,8 +26,9 @@ Kubernestes hay còn gọi là k8s, nó được biết đến như một công 
 ### Kiến trúc k8s và các thành phần của nó:
 
 **K8s Master:** Đây là đơn vị điều khiển chính quản lý wrokloads và liên lạc trên toàn hệ thống.
-**Etcd storage:** Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
-**API-Server:** Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
+
+* Etcd storage: Lưu trữ dữ liệu cấu hình của cluster để thể hiện trạng thái chung của cluster bất cứ lúc nào.
+* API-Server: Quản lý trung tâm nhận các REST requests, đóng vai trò là front-end để điều khiển cluster. Đây là thứ duy nhất giao tiếp với cluster etcd.
 * Scheduler: Lên lịch các pod trên các node khác nhau dựa trên việc sử dụng tài nguyên và quyết định nơi nào triển khai dịch vụ nào.
 * Controller Manager: Nó chạy một số quy trình điều khiển riêng biệt trong nền để điều chỉnh trạng thái chia sẻ của cluster và thực hiện một tác vụ theo quy luật. Khi có bất kỳ thay đổi nào trong dịch vụ, bộ điều khiển sẽ phát hiện ra sự thay đổi và bắt đầu làm việc theo trạng thái mong muốn mới.
 * Worker Node: Còn được gọi là Kubernetes hoặc Minion node, nó chứa thông tin để quản lý kết nối mạng giữa các container như Docker và liên lạc giữa master node khi gán tài nguyên cho các container theo lịch trình.
@@ -58,19 +59,25 @@ Kubernetes cung cấp quản lý DNS, giám sát tài nguyên, ghi nhật ký, s
     * Volume lưu trữ nhất thời: Lưu trữ dữ liệu nhất thời khác với Docker. Trong Kubernetes, volume được tính đến bất kỳ container nào chạy trong pod và dữ liệu được lưu trữ trên container. Nhưng, nếu các pod bị phá hoại, volume sẽ tự động bị loại bỏ.
     * Lưu trữ trọn đời: Dữ liệu sẽ được lưu trữ mãi mãi. Khi pod bị phá hoại hoặc được chuyển đến một node khác, dữ liệu đó sẽ vẫn còn cho đến khi nó bị xóa bởi người dùng. Do đó, dữ liệu được lưu trữ từ xa.
 
-<h4>Đặt nền móng để phát triển ứng dụng cloud</h4>
+**Đặt nền móng để phát triển ứng dụng cloud
 
 Một số công cụ quản lý và điều phối container như Apache Mesos với Marathon, Docker Swarm và AWS EC2 Container Service cung cấp các tính năng tuyệt vời nhưng nhẹ hơn Kubernetes.
-<h4>Docker Swarm</h4> Được gắn kết chặt chẽ với Docker runtime; do đó rất dễ dàng để chuyển từ Docker sang Swarm và ngược lại. 
-<h4>Mesos</h4> Với Marathon có thể triển khai bất kỳ loại ứng dụng nào và chỉ giới hạn ở các container. 
-<h4>AWS ECS</h4> Có thể dễ dàng truy cập bởi người dùng AWS hiện tại.
 
-<h4>Các trường hợp sử dụng thực tế của K8s</h4>
-* Pokémon GO
-* Pearson
-* Pinterest
+**Docker Swarm** Được gắn kết chặt chẽ với Docker runtime; do đó rất dễ dàng để chuyển từ Docker sang Swarm và ngược lại.
 
-<h4>Kết luận</h4>
+**Mesos** Với Marathon có thể triển khai bất kỳ loại ứng dụng nào và chỉ giới hạn ở các container. 
+
+**AWS ECS** Có thể dễ dàng truy cập bởi người dùng AWS hiện tại.
+
+**Các trường hợp sử dụng thực tế của K8s
+  
+  **Pokémon GO
+
+  **Pearson
+
+  **Pinterest
+
+**Kết luận
 
 Trong một khoảng thời gian ngắn, Kubernetes đã lớn mạnh và phát triển thành một hệ thống cực kỳ mạnh mẽ. Vì nó mang lại nhiều lợi ích khác nhau, nhiều công ty thuộc mọi quy mô tìm cách phát triển sản phẩm và dịch vụ để đáp ứng nhu cầu ngày càng tăng. Kubernetes có khả năng hoạt động trên cả public và private cloud và đã biến nó thành một trong những công cụ yêu thích cho các doanh nghiệp hoạt động với các hybrid cloud. Nếu điều này tiếp tục, thậm chí có thể thấy nhiều công ty đầu tư vào Kubernetes và hệ thống quản lý container.
 

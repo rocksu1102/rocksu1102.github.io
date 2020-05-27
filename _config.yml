@@ -89,7 +89,7 @@ analytics:
 # Site Author
 author:
   name             : "Phan Tấn Hưng"
-  avatar           : "/assets/portfolio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/batman_lego.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "System Engineer & DevOps"
   location         : "Hồ Chí Minh City"
   email            :
